@@ -1,6 +1,6 @@
-#include"arduino.h"
+#include "arduino.h"
 
-#include"L293.h"
+#include "L293.h"
 
 L293::L293(uint8_t hiPin, uint8_t loPin, uint8_t pulsePin)
 {
@@ -14,7 +14,7 @@ L293::L293(uint8_t hiPin, uint8_t loPin, uint8_t pulsePin)
 
 void L293::setState(int8_t speedDigit, float moveDuration)
 {
-  if(speedDigit < 0)
+  if (speedDigit < 0)
   {
     digitalWrite(positive, LOW);
     digitalWrite(negative,  HIGH);
