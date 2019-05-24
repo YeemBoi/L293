@@ -4,7 +4,7 @@ This is a library for controlling multiple H-Bridges, specifically ones on an L2
 
 This library is in the public domain.
 
-As opposed to having one class which controls the whole IC, each class you create with this library controls one motor. When you are creating a class, there are three main arguments:
+As opposed to having one object which controls the whole IC, each L293 object you create with this library controls one motor. When you are creating an object, there are three main arguments:
 1: The pin that connects to the "A" input on the H-Bridge
 2: The pin that connects to the "B" input on the H-Bridge
 3: The PWM speed input on the H-Bridge
